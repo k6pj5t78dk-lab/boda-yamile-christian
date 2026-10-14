@@ -227,6 +227,15 @@
     font-size:13px; color:var(--ink-soft); text-align:center; opacity:0.7; margin-top:10px;
   }
 
+  /* Fecha límite de confirmación, destacada */
+  .deadline{
+    margin:22px auto 0; padding:14px 20px; max-width:340px; text-align:center;
+    background:var(--gold); color:#fffdf8;
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:18px; line-height:1.4;
+    box-shadow:0 16px 32px -22px rgba(51,47,39,0.6);
+  }
+  .deadline strong{font-style:normal; font-weight:600; font-size:22px; letter-spacing:0.02em;}
+
   /* ---------- Hospedaje (apartado independiente) ---------- */
   .lodging-cta{text-align:center;}
   .lodging-btn{
@@ -407,7 +416,7 @@
         <a class="rsvp-btn" id="rsvpBtn" href="#" target="_blank" rel="noopener">Confirmar asistencia</a>
       </div>
     </div>
-    <p class="note">Agradecemos confirmar antes del 1 de diciembre de 2026.</p>
+    <p class="deadline">Agradecemos confirmar antes del<br><strong>15 de noviembre de 2026</strong></p>
   </section>
 
   <!-- ============ ACCESO A HOSPEDAJE ============ -->
