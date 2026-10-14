@@ -1,0 +1,7 @@
+# Lista blanca: solo se publica la invitacion y sus imagenes
+*
+!.gitignore
+!invitacion-yamile-christian.html
+!assets/
+!assets/images/
+!assets/images/*.jpg

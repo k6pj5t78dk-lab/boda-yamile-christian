@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yamile & Christian · 26 de diciembre 2026</title>
+<meta name="description" content="Nos casamos el 26 de diciembre de 2026 y queremos celebrarlo contigo. Toda la información de nuestra boda aquí.">
+<!-- Vista previa al compartir por WhatsApp (requiere URL absoluta) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://k6pj5t78dk-lab.github.io/boda-yamile-christian/invitacion-yamile-christian.html">
+<meta property="og:title" content="Yamile & Christian · Nuestra Boda">
+<meta property="og:description" content="26 de diciembre de 2026 · Nos encantaría celebrar este día contigo.">
+<meta property="og:image" content="https://k6pj5t78dk-lab.github.io/boda-yamile-christian/assets/images/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2348533d'/%3E%3Ctext x='32' y='42' font-size='26' font-family='Georgia,serif' fill='%23f7f2e8' text-anchor='middle'%3EY%26C%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f7f2e8;
+    --cream-deep:#efe7d6;
+    --sage-deep:#48533d;
+    --sage-mid:#7c8968;
+    --sage-pale:#c9d0b8;
+    --gold:#a9824f;
+    --ink:#332f27;
+    --ink-soft:#5c5748;
+    --hairline: rgba(169,130,79,0.35);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'EB Garamond', serif;
+    font-size:18px;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  .wrap{max-width:520px;margin:0 auto;position:relative;}
+
+  /* ---------- Revelado suave al hacer scroll ---------- */
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity 0.9s ease-out, transform 0.9s ease-out;}
+  .reveal.is-visible{opacity:1; transform:translateY(0);}
+
+  /* ---------- Hero / portada ---------- */
+  .hero{
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    text-align:center;
+    padding:10vh 8vw 8vh;
+    position:relative;
+    overflow:hidden;
+    background:
+      linear-gradient(180deg, rgba(51,47,39,0.28) 0%, rgba(51,47,39,0.12) 32%, rgba(51,47,39,0.55) 78%, rgba(51,47,39,0.78) 100%),
+      url('assets/images/hero.jpg') center 30% / cover no-repeat;
+  }
+  .branch{position:absolute; opacity:0.9; pointer-events:none; z-index:2;}
+  .branch.tl{top:-20px; left:-40px; width:200px; transform:rotate(-12deg);}
+  .branch.br{bottom:-30px; right:-50px; width:230px; transform:rotate(172deg);}
+  .branch path, .branch ellipse{stroke:#f3efe4; fill:#f3efe4; opacity:0.9;}
+  .hero-inner{position:relative; z-index:2; opacity:0; animation:riseIn 1.4s ease-out 0.2s forwards;}
+  @keyframes riseIn{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:translateY(0);}}
+  .monogram{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:15px;
+    letter-spacing:0.35em;
+    color:var(--cream-deep);
+    margin-bottom:22px;
+  }
+  .names{
+    font-family:'Parisienne', cursive;
+    font-size:clamp(44px, 13vw, 68px);
+    color:#fffdf8;
+    line-height:1.15;
+    margin:0 0 6px;
+    text-shadow:0 2px 18px rgba(0,0,0,0.25);
+  }
+  .names .amp{color:var(--gold); margin:0 6px;}
+  .subtitle{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:19px;
+    color:var(--cream-deep);
+    margin:6px 0 26px;
+  }
+  .divider{
+    width:64px; height:1px; background:var(--gold);
+    margin:0 auto 26px; position:relative;
+  }
+  .divider::before{
+    content:'✦'; position:absolute; top:-8px; left:50%; transform:translateX(-50%);
+    color:var(--gold); font-size:13px; background:transparent; padding:0 8px;
+  }
+  .date-block{font-family:'Cormorant Garamond', serif; color:#fffdf8; }
+  .date-block .day{font-size:15px; letter-spacing:0.25em; color:var(--cream-deep); display:block; margin-bottom:4px;}
+  .date-block .full{font-size:23px; font-weight:500;}
+
+  /* ---------- Fotos dentro de secciones ---------- */
+  .photo-frame{
+    width:100%;
+    aspect-ratio:4/5;
+    overflow:hidden;
+    margin:0 0 26px;
+    position:relative;
+  }
+  .photo-frame img{
+    width:100%; height:100%; object-fit:cover; display:block;
+  }
+  .photo-frame::after{
+    content:'';
+    position:absolute; inset:8px;
+    border:1px solid rgba(255,253,248,0.65);
+    pointer-events:none;
+  }
+  .photo-frame{box-shadow:0 24px 48px -30px rgba(51,47,39,0.45);}
+  .photo-wide{aspect-ratio:4/3;}
+
+  /* ---------- Secciones generales ---------- */
+  section{padding:64px 9vw; position:relative;}
+  .eyebrow-line{
+    display:flex; align-items:center; gap:14px; margin-bottom:28px;
+  }
+  .eyebrow-line .stem{flex:1; height:1px; background:var(--hairline);}
+  .eyebrow-line span.label{
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:20px; color:var(--sage-deep); white-space:nowrap;
+  }
+
+  .lead{
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:22px; color:var(--ink-soft); text-align:center; margin:0 0 8px;
+  }
+  .guest-name{
+    color:var(--sage-deep); font-weight:600; font-style:normal;
+  }
+  p{margin:0 0 16px;}
+
+  .card{
+    background:var(--cream-deep);
+    border:1px solid var(--hairline);
+    padding:30px 26px;
+    text-align:center;
+    box-shadow:0 20px 40px -30px rgba(51,47,39,0.35);
+  }
+  .card + .card{margin-top:18px;}
+  .card h3{
+    font-family:'Cormorant Garamond', serif; font-weight:500; font-size:24px; color:var(--sage-deep); margin:0 0 4px;
+  }
+  .card .place{font-size:19px; margin-bottom:2px;}
+  .card .addr{font-size:16px; color:var(--ink-soft); margin-bottom:14px;}
+  .card a.maplink{
+    display:inline-block; font-family:'Cormorant Garamond', serif; font-style:italic; font-size:16px;
+    color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold); padding-bottom:2px;
+    transition:opacity 0.25s ease;
+  }
+  .card a.maplink:hover{opacity:0.7;}
+
+  /* Regalo / lluvia de sobres */
+  .gift-row{display:flex; justify-content:space-between; align-items:center; gap:12px; padding:10px 0; border-top:1px solid var(--hairline);}
+  .gift-row:first-of-type{border-top:none;}
+  .gift-row .k{font-size:13px; letter-spacing:0.08em; color:var(--ink-soft); text-transform:uppercase;}
+  .gift-row .v{font-family:'Cormorant Garamond', serif; font-size:18px; color:var(--ink); text-align:right;}
+  .copy-btn{
+    margin-top:16px; display:inline-flex; align-items:center; gap:8px; background:none;
+    border:1px solid var(--gold); color:var(--gold); font-family:'Cormorant Garamond', serif; font-style:italic;
+    font-size:15px; padding:9px 18px; cursor:pointer; transition:background 0.25s ease, color 0.25s ease;
+  }
+  .copy-btn:hover{background:var(--gold); color:var(--cream);}
+
+  /* Countdown */
+  .countdown{display:flex; justify-content:center; gap:22px; margin:8px 0 4px;}
+  .countdown .cell{text-align:center;}
+  .countdown .num{font-family:'Cormorant Garamond', serif; font-size:34px; color:var(--sage-deep); display:block; line-height:1;}
+  .countdown .unit{font-size:13px; letter-spacing:0.12em; color:var(--ink-soft);}
+
+  /* Itinerario - es una secuencia real: se justifica numeración/timeline */
+  .timeline{list-style:none; padding:0; margin:0; position:relative;}
+  .timeline::before{content:''; position:absolute; left:9px; top:6px; bottom:6px; width:1px; background:var(--hairline);}
+  .timeline li{position:relative; padding:0 0 26px 34px;}
+  .timeline li:last-child{padding-bottom:0;}
+  .timeline li::before{
+    content:''; position:absolute; left:0; top:5px; width:10px; height:10px; border-radius:50%;
+    background:var(--cream); border:2px solid var(--gold);
+  }
+  .timeline .time{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:18px; color:var(--sage-deep); display:block;}
+  .timeline .desc{font-size:16px; color:var(--ink-soft);}
+
+  /* Vestimenta */
+  .palette{display:flex; justify-content:center; gap:12px; margin:18px 0 10px;}
+  .swatch{width:34px; height:34px; border-radius:50%; border:1px solid var(--hairline);}
+
+  /* RSVP / pases */
+  .pases-box{
+    background:var(--sage-deep); color:var(--cream);
+    padding:34px 26px; text-align:center;
+    box-shadow:0 24px 48px -28px rgba(51,47,39,0.55);
+  }
+  .pases-box .num-pases{font-family:'Cormorant Garamond', serif; font-size:52px; line-height:1; display:block; margin:6px 0 4px; color:var(--cream);}
+  .pases-box .label-pases{font-family:'Cormorant Garamond', serif; font-style:italic; font-size:16px; opacity:0.85;}
+  .rsvp-btn{
+    display:inline-block; margin-top:22px; padding:13px 30px;
+    background:var(--gold); color:var(--cream); text-decoration:none;
+    font-family:'Cormorant Garamond', serif; font-size:17px; letter-spacing:0.04em;
+    border:1px solid var(--gold);
+    transition:background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+  .rsvp-btn:hover{background:var(--sage-deep); color:var(--cream); border-color:var(--cream-deep); transform:translateY(-2px);}
+
+  footer{
+    text-align:center; padding:56px 9vw 70px;
+  }
+  footer .monogram-big{
+    font-family:'Parisienne', cursive; font-size:40px; color:var(--sage-deep); margin-bottom:10px;
+  }
+  footer .thanks{font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); font-size:17px;}
+
+  .note{
+    font-size:13px; color:var(--ink-soft); text-align:center; opacity:0.7; margin-top:10px;
+  }
+
+  /* ---------- Hospedaje (apartado independiente) ---------- */
+  .lodging-cta{text-align:center;}
+  .lodging-btn{
+    display:inline-block; padding:13px 30px; background:none; cursor:pointer;
+    border:1px solid var(--sage-deep); color:var(--sage-deep);
+    font-family:'Cormorant Garamond', serif; font-size:17px; letter-spacing:0.04em;
+    transition:background 0.25s ease, color 0.25s ease;
+  }
+  .lodging-btn:hover{background:var(--sage-deep); color:var(--cream);}
+  .lodging-panel{
+    position:fixed; inset:0; z-index:50; background:var(--cream);
+    overflow-y:auto; -webkit-overflow-scrolling:touch;
+    animation:riseIn 0.5s ease-out;
+  }
+  .lodging-panel .wrap{padding:24px 0 60px;}
+  .lodging-panel section{padding-top:24px; padding-bottom:24px;}
+  .lodging-close{
+    position:sticky; top:0; z-index:2; display:block; width:100%; text-align:left;
+    background:var(--cream); border:none; border-bottom:1px solid var(--hairline);
+    padding:16px 9vw; cursor:pointer;
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:17px; color:var(--gold);
+  }
+  .stay-list{list-style:none; padding:0; margin:0;}
+  .stay-list li{padding:16px 0; border-top:1px solid var(--hairline);}
+  .stay-list li:first-child{border-top:none;}
+  .stay-list .name{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:19px; color:var(--sage-deep); display:block;}
+  .stay-list .where{font-size:15px; color:var(--ink-soft); display:block;}
+  .stay-list .links{display:flex; gap:18px; margin-top:6px;}
+  .stay-list .links a{
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:16px;
+    color:var(--gold); text-decoration:none; border-bottom:1px solid var(--gold);
+  }
+  body.no-scroll{overflow:hidden;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="hero">
+    <svg class="branch tl" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 190 C 40 150, 30 110, 60 70 C 80 45, 100 30, 130 10" stroke="#7c8968" stroke-width="2" stroke-linecap="round"/>
+      <path d="M60 70 C 45 60, 35 55, 25 45" stroke="#7c8968" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M60 70 C 70 55, 75 48, 78 35" stroke="#7c8968" stroke-width="1.6" stroke-linecap="round"/>
+      <ellipse cx="24" cy="44" rx="9" ry="5" fill="#c9d0b8" transform="rotate(-35 24 44)"/>
+      <ellipse cx="79" cy="34" rx="9" ry="5" fill="#c9d0b8" transform="rotate(20 79 34)"/>
+      <ellipse cx="98" cy="45" rx="8" ry="4.5" fill="#c9d0b8" transform="rotate(-10 98 45)"/>
+    </svg>
+    <svg class="branch br" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 190 C 40 150, 30 110, 60 70 C 80 45, 100 30, 130 10" stroke="#a9824f" stroke-width="2" stroke-linecap="round"/>
+      <path d="M60 70 C 45 60, 35 55, 25 45" stroke="#a9824f" stroke-width="1.6" stroke-linecap="round"/>
+      <ellipse cx="24" cy="44" rx="8" ry="4.5" fill="#c9d0b8" transform="rotate(-35 24 44)"/>
+      <ellipse cx="98" cy="45" rx="8" ry="4.5" fill="#c9d0b8" transform="rotate(-10 98 45)"/>
+    </svg>
+
+    <div class="hero-inner">
+      <div class="monogram">N U E S T R A&nbsp; B O D A</div>
+      <h1 class="names">Yamile<span class="amp">&amp;</span>Christian</h1>
+      <div class="subtitle">nos casamos y queremos celebrarlo contigo</div>
+      <div class="divider"></div>
+      <div class="date-block">
+        <span class="day">SÁBADO</span>
+        <span class="full">26 de diciembre de 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BIENVENIDA PERSONALIZADA ============ -->
+  <section class="reveal">
+    <div class="photo-frame">
+      <img src="assets/images/bienvenida.jpg" alt="Yamile y Christian">
+    </div>
+    <p class="lead">Querida(o) <span class="guest-name" id="guestName">familia</span>,</p>
+    <p style="text-align:center; color:var(--ink-soft);">
+      Con la bendición de Dios y de nuestras familias, queremos compartir contigo
+      el día en que unimos nuestras vidas. Tu cariño y compañía son parte
+      importante de esta historia, y nos encantaría celebrar junto a ti.
+    </p>
+  </section>
+
+  <!-- ============ CUENTA REGRESIVA ============ -->
+  <section class="reveal" style="padding-top:0;">
+    <div class="countdown" id="countdown">
+      <div class="cell"><span class="num" id="cd-days">--</span><span class="unit">días</span></div>
+      <div class="cell"><span class="num" id="cd-hours">--</span><span class="unit">horas</span></div>
+      <div class="cell"><span class="num" id="cd-mins">--</span><span class="unit">min</span></div>
+    </div>
+  </section>
+
+  <!-- ============ CEREMONIA Y RECEPCIÓN ============ -->
+  <section class="reveal">
+    <div class="eyebrow-line"><div class="stem"></div><span class="label">Dónde celebramos</span><div class="stem"></div></div>
+
+    <div class="photo-frame photo-wide">
+      <img src="assets/images/ceremonia.jpg" alt="Yamile y Christian">
+    </div>
+    <div class="card">
+      <h3>Ceremonia &amp; Recepción</h3>
+      <div class="place">Rancho La Joya</div>
+      <div class="addr">C. Rep. de Paraguay s/n, Centro,<br>62790 Xochitepec, Mor.</div>
+      <div style="font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--ink-soft); margin-bottom:14px;">
+        Ceremonia a las 2:30 p.m.<br>Te esperamos desde las 2:00 p.m.
+      </div>
+      <a class="maplink" href="https://maps.app.goo.gl/WMjwjG8rx6HkC4388" target="_blank" rel="noopener">Ver ubicación en el mapa</a>
+    </div>
+  </section>
+
+  <!-- ============ ITINERARIO (secuencia real del día) ============ -->
+  <section class="reveal">
+    <div class="eyebrow-line"><div class="stem"></div><span class="label">Itinerario del día</span><div class="stem"></div></div>
+    <div class="photo-frame">
+      <img src="assets/images/itinerario.jpg" alt="Yamile y Christian">
+    </div>
+    <ul class="timeline">
+      <li><span class="time">2:00 p.m.</span><span class="desc">Llegada y recepción de invitados</span></li>
+      <li><span class="time">2:30 p.m.</span><span class="desc">Ceremonia civil</span></li>
+      <li><span class="time">3:00 p.m.</span><span class="desc">Cóctel de bienvenida con mariachi</span></li>
+      <li><span class="time">3:50 p.m.</span><span class="desc">Paso al banquete</span></li>
+      <li><span class="time">4:20 p.m.</span><span class="desc">Entrada de los novios y brindis</span></li>
+      <li><span class="time">4:30 p.m.</span><span class="desc">Banquete</span></li>
+      <li><span class="time">6:15 p.m.</span><span class="desc">Bailes especiales y primer baile de esposos</span></li>
+      <li><span class="time">6:30 p.m.</span><span class="desc">Apertura de pista</span></li>
+      <li><span class="time">8:00 p.m.</span><span class="desc">Banda en vivo</span></li>
+      <li><span class="time">2:00 a.m.</span><span class="desc">Fin de la celebración</span></li>
+    </ul>
+    <p class="note">*Horarios aproximados, podrían ajustarse ligeramente.</p>
+  </section>
+
+  <!-- ============ CÓDIGO DE VESTIMENTA ============ -->
+  <section class="reveal">
+    <div class="eyebrow-line"><div class="stem"></div><span class="label">Código de vestimenta</span><div class="stem"></div></div>
+    <p class="lead" style="font-size:20px;">Formal de jardín</p>
+    <p style="text-align:center; color:var(--ink-soft);">
+      Nos encantaría que nos acompañaran vistiendo de manera formal y elegante para celebrar este día tan especial.
+    </p>
+    <div class="photo-frame" style="aspect-ratio:853/1280;">
+      <img src="assets/images/dresscode.jpg" alt="Código de vestimenta: formal de jardín">
+    </div>
+    <div class="card">
+      <h3>Caballeros</h3>
+      <div class="place">Traje formal</div>
+      <div class="addr">Favor de evitar azul, gris y beige,<br>reservados para los novios.</div>
+    </div>
+    <div class="card">
+      <h3>Damas</h3>
+      <div class="place">Vestido formal o cóctel elegante</div>
+      <div class="addr">Favor de evitar blanco, beige o rojo,<br>reservados para momentos especiales del evento.</div>
+    </div>
+  </section>
+
+  <!-- ============ REGALO / LLUVIA DE SOBRES ============ -->
+  <section class="reveal">
+    <div class="eyebrow-line"><div class="stem"></div><span class="label">Mesa de regalos</span><div class="stem"></div></div>
+    <p class="lead" style="font-size:20px;">Tu presencia es nuestro mejor regalo</p>
+    <p style="text-align:center; color:var(--ink-soft);">
+      Si además deseas tener un detalle con nosotros, nos encantaría contar con tu apoyo en forma de sobre o transferencia para comenzar esta nueva etapa juntos.
+    </p>
+    <div class="card">
+      <h3>Lluvia de sobres</h3>
+      <div class="gift-row"><span class="k">Banco</span><span class="v" id="giftBank">Nu</span></div>
+      <div class="gift-row"><span class="k">Titular</span><span class="v" id="giftHolder">Aixa Yamile Ortiz Alvirde</span></div>
+      <div class="gift-row"><span class="k">CLABE</span><span class="v" id="giftAccount">638180010063279723</span></div>
+      <button class="copy-btn" id="copyAccountBtn" type="button">Copiar CLABE</button>
+    </div>
+  </section>
+
+  <!-- ============ PASES / CONFIRMACIÓN ============ -->
+  <section class="reveal">
+    <div class="eyebrow-line"><div class="stem"></div><span class="label">Confirma tu asistencia</span><div class="stem"></div></div>
+    <div class="photo-frame">
+      <img src="assets/images/rsvp.jpg" alt="Yamile y Christian">
+    </div>
+    <div class="pases-box">
+      <span class="label-pases">Esta invitación es válida para</span>
+      <span class="num-pases" id="numPases">2</span>
+      <span class="label-pases" id="labelPasesText">personas</span>
+      <div>
+        <a class="rsvp-btn" id="rsvpBtn" href="#" target="_blank" rel="noopener">Confirmar asistencia</a>
+      </div>
+    </div>
+    <p class="note">Agradecemos confirmar antes del 1 de diciembre de 2026.</p>
+  </section>
+
+  <!-- ============ ACCESO A HOSPEDAJE ============ -->
+  <section class="reveal lodging-cta">
+    <div class="eyebrow-line"><div class="stem"></div><span class="label">Hospedaje</span><div class="stem"></div></div>
+    <p class="lead" style="font-size:20px;">¿Quieres quedarte cerca?</p>
+    <p style="text-align:center; color:var(--ink-soft);">
+      Te compartimos algunas opciones de hoteles y Airbnb a pocos minutos de Rancho La Joya.
+    </p>
+    <button class="lodging-btn" id="openLodging" type="button">Ver opciones de hospedaje</button>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="monogram-big">Y &amp; C</div>
+    <div class="thanks">Con todo nuestro cariño,<br>Yamile &amp; Christian</div>
+  </footer>
+
+</div>
+
+<!-- ============ APARTADO DE HOSPEDAJE (fuera de la invitación principal) ============ -->
+<div class="lodging-panel" id="lodgingPanel" hidden>
+  <button class="lodging-close" id="closeLodging" type="button">&larr; Volver a la invitación</button>
+  <div class="wrap">
+    <section>
+      <p class="lead">Hoteles y Airbnb</p>
+      <p style="text-align:center; color:var(--ink-soft);">
+        Opciones a 5–15 minutos de Rancho La Joya, en Xochitepec y Chiconcuac.
+        Te sugerimos reservar con anticipación por la temporada decembrina.
+      </p>
+    </section>
+
+    <section>
+      <div class="eyebrow-line"><div class="stem"></div><span class="label">Hoteles</span><div class="stem"></div></div>
+      <ul class="stay-list">
+        <li><span class="name">Hotel Xochitepec</span><span class="where">C. Rep. de Paraguay 33, Centro, Xochitepec</span>
+          <span class="links"><a href="tel:+527773656606">777 365 6606</a><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Xochitepec+Rep.+de+Paraguay+33+Xochitepec+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Hotel Quinta Parroquia</span><span class="where">C. Rep. Argentina 18, Centro, Xochitepec</span>
+          <span class="links"><a href="tel:+527773657197">777 365 7197</a><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Quinta+Parroquia+Xochitepec+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Los Temazcales Xochitepec</span><span class="where">Brasil 20, Centro, Xochitepec</span>
+          <span class="links"><a href="tel:+527773612873">777 361 2873</a><a href="https://www.google.com/maps/search/?api=1&query=Los+Temazcales+de+Xochitepec+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Hotel Xhiara</span><span class="where">República de Cuba 16, Centro, Xochitepec</span>
+          <span class="links"><a href="tel:+525619853250">561 985 3250</a><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Xhiara+Xochitepec+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Hotel Casa Mamey</span><span class="where">Av. Morelos, Centro, Xochitepec</span>
+          <span class="links"><a href="tel:+527209107364">720 910 7364</a><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Casa+Mamey+Xochitepec+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Finca Los Ángeles</span><span class="where">Tabachines 37, Lázaro Cárdenas, Chiconcuac</span>
+          <span class="links"><a href="tel:+525564161171">556 416 1171</a><a href="https://www.google.com/maps/search/?api=1&query=Finca+Los+Angeles+Chiconcuac+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Fiesta Americana Hacienda Real del Puente</span><span class="where">Reforma 2, Fracc. Real del Puente, Xochitepec</span>
+          <span class="links"><a href="tel:+524433108137">443 310 8137</a><a href="https://www.google.com/maps/search/?api=1&query=Fiesta+Americana+Hacienda+Real+del+Puente+Xochitepec" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Casa Boutique La Luciérnaga</span><span class="where">Los Pinos 39A, Lázaro Cárdenas, Chiconcuac</span>
+          <span class="links"><a href="tel:+527772528030">777 252 8030</a><a href="https://www.google.com/maps/search/?api=1&query=Casa+Boutique+La+Luciernaga+Chiconcuac+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Hotel Boutique El Laurel</span><span class="where">Jacarandas 12, Real del Puente, Xochitepec</span>
+          <span class="links"><a href="tel:+527771350070">777 135 0070</a><a href="https://www.google.com/maps/search/?api=1&query=Hotel+Boutique+El+Laurel+Real+del+Puente+Xochitepec" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Tonantzincalli Spa Prehispánico</span><span class="where">De Las Cañas, San Pedro de los Pinos, Chiconcuac</span>
+          <span class="links"><a href="tel:+527773396449">777 339 6449</a><a href="https://www.google.com/maps/search/?api=1&query=Tonantzincalli+Spa+Prehispanico+Chiconcuac+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+        <li><span class="name">Finca Mi Refugio</span><span class="where">C. Cedros 15, Lázaro Cárdenas, Chiconcuac</span>
+          <span class="links"><a href="tel:+525564261496">556 426 1496</a><a href="https://www.google.com/maps/search/?api=1&query=Finca+Mi+Refugio+Chiconcuac+Morelos" target="_blank" rel="noopener">Mapa</a></span></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="eyebrow-line"><div class="stem"></div><span class="label">Airbnb</span><div class="stem"></div></div>
+      <ul class="stay-list">
+        <li><span class="name">Casas Diamante Hospedaje</span><span class="where">Caseta Xochitepec</span>
+          <span class="links"><a href="tel:+527779594229">777 959 4229</a></span></li>
+        <li><span class="name">Más opciones en Airbnb</span><span class="where">Busca: Xochitepec Centro, Morelos</span>
+          <span class="links"><a href="https://www.airbnb.mx/s/Xochitepec-Centro--Morelos/homes" target="_blank" rel="noopener">Buscar en Airbnb</a></span></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="card">
+        <h3>Rancho La Joya</h3>
+        <div class="addr">C. Rep. de Paraguay s/n, Centro,<br>62790 Xochitepec, Mor.</div>
+        <a class="maplink" href="https://maps.app.goo.gl/WMjwjG8rx6HkC4388" target="_blank" rel="noopener">Ver ubicación del evento</a>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script>
+  // ---------- Personalización vía parámetros en la URL ----------
+  // Ejemplo de link personalizado:
+  // https://tu-dominio.com/invitacion.html?invitado=Familia%20Perez&pases=4
+  const params = new URLSearchParams(window.location.search);
+  const invitado = params.get('invitado');
+  const pases = parseInt(params.get('pases'), 10);
+
+  if (invitado) {
+    document.getElementById('guestName').textContent = invitado;
+  }
+
+  const numPasesEl = document.getElementById('numPases');
+  const labelPasesEl = document.getElementById('labelPasesText');
+  if (!isNaN(pases) && pases > 0) {
+    numPasesEl.textContent = pases;
+    labelPasesEl.textContent = pases === 1 ? 'persona' : 'personas';
+  }
+
+  // Botón de confirmación por WhatsApp (EDITAR número y mensaje)
+  const telefono = '525529536250'; // formato wa.me: lada de país + número, sin + ni espacios
+  const nombreParaMensaje = invitado ? invitado : 'familia';
+  const pasesParaMensaje = (!isNaN(pases) && pases > 0) ? pases : 2;
+  const mensaje = `Hola, somos ${nombreParaMensaje} y confirmamos nuestra asistencia a la boda de Yamile & Christian (${pasesParaMensaje} personas).`;
+  document.getElementById('rsvpBtn').href = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+
+  // ---------- Datos bancarios (EDITAR con los datos reales) ----------
+  const giftAccountNumber = '638180010063279723';
+  document.getElementById('copyAccountBtn').addEventListener('click', () => {
+    navigator.clipboard.writeText(giftAccountNumber).then(() => {
+      const btn = document.getElementById('copyAccountBtn');
+      const original = btn.textContent;
+      btn.textContent = '¡Copiado!';
+      setTimeout(() => { btn.textContent = original; }, 1800);
+    });
+  });
+
+  // ---------- Apartado de hospedaje ----------
+  // Usa el hash #hospedaje para que el botón "atrás" del celular cierre el apartado
+  const lodgingPanel = document.getElementById('lodgingPanel');
+  function syncLodging(){
+    const open = window.location.hash === '#hospedaje';
+    lodgingPanel.hidden = !open;
+    document.body.classList.toggle('no-scroll', open);
+    if (open) lodgingPanel.scrollTop = 0;
+  }
+  let openedFromPage = false;
+  document.getElementById('openLodging').addEventListener('click', () => {
+    openedFromPage = true;
+    window.location.hash = 'hospedaje';
+  });
+  document.getElementById('closeLodging').addEventListener('click', () => {
+    if (openedFromPage) { openedFromPage = false; history.back(); }
+    else { window.location.hash = ''; }
+  });
+  window.addEventListener('hashchange', syncLodging);
+  syncLodging();
+
+  // ---------- Revelado suave al hacer scroll ----------
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ---------- Cuenta regresiva ----------
+  const weddingDate = new Date('2026-12-26T14:30:00-06:00'); // hora de la ceremonia (hora del centro de México)
+  function updateCountdown(){
+    const now = new Date();
+    const diff = weddingDate - now;
+    if (diff <= 0) {
+      document.getElementById('countdown').innerHTML = '<div class="cell"><span class="num">¡Hoy!</span></div>';
+      return;
+    }
+    const days = Math.floor(diff / (1000*60*60*24));
+    const hours = Math.floor((diff / (1000*60*60)) % 24);
+    const mins = Math.floor((diff / (1000*60)) % 60);
+    document.getElementById('cd-days').textContent = days;
+    document.getElementById('cd-hours').textContent = hours;
+    document.getElementById('cd-mins').textContent = mins;
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 60000);
+</script>
+</body>
+</html>
